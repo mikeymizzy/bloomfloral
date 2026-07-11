@@ -15,7 +15,7 @@ const location_data = [
     time: "12:00 pm GMT+2",
     location_title: "Base Create",
     address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
+    phone: "+27833824166",
     email: "Hello@contact.com",
   },
   {
@@ -25,7 +25,7 @@ const location_data = [
     time: "11:00 pm GMT+2",
     location_title: "Base Create",
     address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
+    phone: "+27833824166",
     email: "Hello@contact.com",
   },
   {
@@ -35,7 +35,7 @@ const location_data = [
     time: "10:00 pm GMT+2",
     location_title: "Base Create",
     address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
+    phone: "+27833824166",
     email: "Hello@contact.com",
   },
 ];
@@ -80,7 +80,7 @@ const ContactLocation = () => {
                       </div>
                     </div>
                     <div className="cn-contact-right-info text-start text-md-end">
-                      <Link href="tel:(+91)76001726">{item.phone}</Link> <br />
+                      <Link href="tel:+27833824166">{item.phone}</Link> <br />
                       <Link href="mailto:Hello@contact.com">{item.email}</Link>
                     </div>
                   </div>

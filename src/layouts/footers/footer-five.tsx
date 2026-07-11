@@ -49,7 +49,7 @@ export default function FooterFive() {
                 </span>
                 <span>
                   Phone:
-                  <Link href="tel:+725214456">+ 725 214 456</Link>
+                  <Link href="tel:+27833824166">+27833824166</Link>
                 </span>
               </div>
             </div>

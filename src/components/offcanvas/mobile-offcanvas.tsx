@@ -71,7 +71,7 @@ export default function MobileOffcanvas({
 
               <ul>
                 <li>
-                  <Link href="tel:1245654">+ 4 20 7700 1007</Link>
+                  <Link href="tel:+27833824166">+27833824166</Link>
                 </li>
                 <li>
                   <Link href="mailto:hello@diego.com">hello@diego.com</Link>

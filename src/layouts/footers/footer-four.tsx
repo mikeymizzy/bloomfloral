@@ -63,7 +63,7 @@ export default function FooterFour() {
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <Link href="tel:+27000000000">+27 00 000 0000</Link></span>
+                    <span>P: <Link href="tel:+27833824166">+27833824166</Link></span>
                     <span>E: <Link href="mailto:hello@bloomfloral.co.za">hello@bloomfloral.co.za</Link></span>
                   </div>
                 </div>

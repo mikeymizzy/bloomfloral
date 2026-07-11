@@ -76,7 +76,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <Link href="tel:+725214456">P: + 725 214 456</Link>
+                    <Link href="tel:+27833824166">P: +27833824166</Link>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">

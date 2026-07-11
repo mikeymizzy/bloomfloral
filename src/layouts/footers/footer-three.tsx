@@ -71,7 +71,7 @@ export default function FooterThree() {
                   <span><Link href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu" target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</Link></span>
                 </div>
                 <div className="tp-footer-2-contact-item">
-                  <span><Link href="tel:+725214456">P: + 725 214 456</Link></span>
+                  <span><Link href="tel:+27833824166">P: +27833824166</Link></span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span><Link href="mailto:contact@liko.com">E: contact@liko.com</Link></span>

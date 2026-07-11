@@ -18,7 +18,7 @@ const location_data = [
     img_2: c_img_2,
     map: "https://www.google.com/maps/@23.822356,90.3671947,15z?entry=ttu",
     address: "C26, 99 Jones Street, Ultimo. Sydney. 2007, NSW- Australia",
-    phone: "(+91) 76001726",
+    phone: "+27833824166",
     email: "sydney@contact.com",
   },
   {
@@ -28,7 +28,7 @@ const location_data = [
     img_2: c_img_4,
     map: "https://www.google.com/maps/@23.822356,90.3671947,15z?entry=ttu",
     address: "86-90 Paul Street. London. EC2A 4NE, I-United Kingdom",
-    phone: "(+91) 76001726",
+    phone: "+27833824166",
     email: "london@contact.com",
   },
   {

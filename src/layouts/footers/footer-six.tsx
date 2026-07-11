@@ -23,7 +23,7 @@ export default function FooterSix() {
                   <div className="tp-footer-6-talk">
                     <span>Got Questions? Call us</span>
                     <h4>
-                      <Link href="tel:+67041390762">+670 413 90 762</Link>
+                      <Link href="tel:+27833824166">+27833824166</Link>
                     </h4>
                   </div>
                   <div className="tp-footer-6-contact">

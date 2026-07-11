@@ -62,7 +62,7 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
           <div className="tp-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
             <div className="tpoffcanvas__right-info">
               <div className="tpoffcanvas__tel">
-                <Link href="tel:61404093954">+61404093 954</Link>
+                <Link href="tel:+27833824166">+27833824166</Link>
               </div>
               <div className="tpoffcanvas__mail">
                 <Link href="mailto:hellocontact@diego.com">
