@@ -1,0 +1,210 @@
+@forward '../../public/assets/css/bootstrap.min.css'; 
+@forward '../../public/assets/scss/main.scss';
+
+html[data-theme='dark'] body.home-four-black {
+  background-color: #000000 !important;
+}
+
+.home-four-black #smooth-wrapper,
+.home-four-black #smooth-content,
+.home-four-black main {
+  background-color: #000000 !important;
+}
+
+.home-four-black .tp-hero-3-dark {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url('/assets/img/flower-portfolio/flower-01.jpeg') !important;
+}
+
+.home-four-black #services,
+.home-four-black #portfolio,
+.home-four-black #contact {
+  scroll-margin-top: 120px;
+}
+
+.home-four-black .flower-header-logo a,
+.home-four-black .flower-footer-logo {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.home-four-black .flower-simple-menu ul {
+  align-items: center;
+  display: flex;
+  gap: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-four-black .flower-simple-menu a,
+.home-four-black .flower-mobile-cta {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-four-black .flower-mobile-cta {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 10px 16px;
+}
+
+.home-four-black .tp-gallery-item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  width: min(420px, 72vw);
+}
+
+.home-four-black .tp-gallery-item img,
+.home-four-black .tp-project-3-thumb img,
+.home-four-black .tp-video-3-wrap img,
+.home-four-black .tp-cta-icon img {
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  width: 100% !important;
+}
+
+.home-four-black .tp-project-3-thumb {
+  aspect-ratio: 0.86 / 1;
+  overflow: hidden;
+}
+
+.home-four-black .tp-video-3-wrap {
+  height: min(760px, 82vh);
+  overflow: hidden;
+}
+
+.home-four-black .tp-cta-icon {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home-four-black .flower-contact-form {
+  margin-top: 70px;
+}
+
+.home-four-black .flower-contact-form input,
+.home-four-black .flower-contact-form textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 16px;
+  height: 64px;
+  margin-bottom: 18px;
+  outline: none;
+  padding: 0 22px;
+  width: 100%;
+}
+
+.home-four-black .flower-contact-form textarea {
+  height: 150px;
+  padding-top: 20px;
+  resize: vertical;
+}
+
+.home-four-black .flower-contact-form input::placeholder,
+.home-four-black .flower-contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.home-four-black .flower-contact-form button {
+  background: #ffffff;
+  border: 0;
+  color: #19191a;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  min-width: 190px;
+  padding: 20px 28px;
+  text-transform: uppercase;
+}
+
+.home-four-black .flower-contact-form button:hover {
+  background: #d8ff36;
+}
+
+@media (max-width: 767px) {
+  .home-four-black .flower-header-logo a {
+    font-size: 18px;
+  }
+
+  .home-four-black .tp-project-3-thumb {
+    aspect-ratio: 4 / 5;
+    margin-bottom: 24px;
+  }
+
+  .home-four-black .tp-video-3-wrap {
+    height: 58vh;
+  }
+
+  .home-four-black .flower-contact-form {
+    margin-top: 45px;
+  }
+}
+
+
+// Video modal style 
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9); 
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal-container {
+  width: 90%;
+  max-width: 1200px; 
+  position: relative;
+}
+
+.video-modal-iframe {
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  color: white;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-modal-close:hover {
+  transform: scale(1.2);
+}
+
+/* Click outside to close */
+.video-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
