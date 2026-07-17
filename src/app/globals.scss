@@ -95,6 +95,7 @@ html[data-theme='dark'] body.home-four-black {
 }
 
 .home-four-black .flower-contact-form input,
+.home-four-black .flower-contact-form select,
 .home-four-black .flower-contact-form textarea {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -112,6 +113,24 @@ html[data-theme='dark'] body.home-four-black {
   height: 150px;
   padding-top: 20px;
   resize: vertical;
+}
+
+.home-four-black .flower-contact-form select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #ffffff 50%),
+    linear-gradient(135deg, #ffffff 50%, transparent 50%);
+  background-position:
+    calc(100% - 24px) 27px,
+    calc(100% - 18px) 27px;
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
+  cursor: pointer;
+}
+
+.home-four-black .flower-contact-form select option {
+  background: #19191a;
+  color: #ffffff;
 }
 
 .home-four-black .flower-contact-form input::placeholder,

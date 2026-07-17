@@ -3,14 +3,14 @@ import Image from "next/image";
 
 import { FirstBracket, FirstBracketTwo } from "../svg";
 // images
-import port_1 from "@/assets/img/flower-portfolio/flower-18.jpeg";
-import port_2 from "@/assets/img/flower-portfolio/flower-02.jpeg";
-import port_3 from "@/assets/img/flower-portfolio/flower-03.jpeg";
-import port_4 from "@/assets/img/flower-portfolio/flower-08.jpeg";
-import port_5 from "@/assets/img/flower-portfolio/flower-10.jpeg";
-import port_6 from "@/assets/img/flower-portfolio/flower-22.jpeg";
-import port_7 from "@/assets/img/flower-portfolio/flower-23.jpeg";
-import port_8 from "@/assets/img/flower-portfolio/flower-34.jpeg";
+import port_1 from "@/assets/img/flower-portfolio/majestic-02.jpeg";
+import port_2 from "@/assets/img/flower-portfolio/majestic-04.jpeg";
+import port_3 from "@/assets/img/flower-portfolio/majestic-05.jpeg";
+import port_4 from "@/assets/img/flower-portfolio/majestic-03.jpeg";
+import port_5 from "@/assets/img/flower-portfolio/majestic-06.jpeg";
+import port_6 from "@/assets/img/flower-portfolio/majestic-07.jpeg";
+import port_7 from "@/assets/img/flower-portfolio/majestic-08.jpeg";
+import port_8 from "@/assets/img/flower-portfolio/majestic-01.jpeg";
 import Link from "next/link";
 
 // portfolio data

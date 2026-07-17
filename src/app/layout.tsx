@@ -68,9 +68,9 @@ const marcellus = Marcellus({
 });
 
 export const metadata: Metadata = {
-  title: "Bloom Floral - Flower Provider Services",
+  title: "Majestic Florist | Decor, Functions and Events",
   description:
-    "Bloom Floral — bespoke floral design for weddings, events, and private bookings.",
+    "Majestic Florist creates bespoke floral decor for weddings, functions and events in Johannesburg, South Africa.",
 };
 
 export default function RootLayout({

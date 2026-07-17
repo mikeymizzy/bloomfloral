@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import cta from '@/assets/img/flower-portfolio/flower-23.jpeg';
+import cta from '@/assets/img/flower-portfolio/majestic-01.jpeg';
 
 export default function ContactOne() {
   return (
@@ -23,7 +23,7 @@ export default function ContactOne() {
         </div>
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
-            <form className="flower-contact-form" action="mailto:hello@bloomfloral.co.za" method="post">
+            <form className="flower-contact-form" action="mailto:info@majesticflorist.co.za" method="post">
               <div className="row">
                 <div className="col-md-6">
                   <input type="text" name="name" placeholder="Your name" aria-label="Your name" />
@@ -38,7 +38,16 @@ export default function ContactOne() {
                   <input type="text" name="event_date" placeholder="Event date" aria-label="Event date" />
                 </div>
                 <div className="col-12">
-                  <input type="text" name="event_type" placeholder="Wedding, corporate event, tablescape..." aria-label="Event type" />
+                  <select name="event_type" aria-label="Event type" defaultValue="" required>
+                    <option value="" disabled>Choose event type</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Corporate event">Corporate event</option>
+                    <option value="Private function">Private function</option>
+                    <option value="Birthday or celebration">Birthday or celebration</option>
+                    <option value="Tablescape or dinner">Tablescape or dinner</option>
+                    <option value="Floral installation">Floral installation</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
                 <div className="col-12">
                   <textarea name="message" placeholder="Tell us about the venue, color palette, guest count, and floral style you want" aria-label="Floral enquiry details"></textarea>

@@ -23,9 +23,25 @@ import flower_14 from '@/assets/img/flower-portfolio/flower-14.jpeg';
 import flower_15 from '@/assets/img/flower-portfolio/flower-15.jpeg';
 import flower_16 from '@/assets/img/flower-portfolio/flower-16.jpeg';
 import flower_17 from '@/assets/img/flower-portfolio/flower-17.jpeg';
+import majestic_01 from '@/assets/img/flower-portfolio/majestic-01.jpeg';
+import majestic_02 from '@/assets/img/flower-portfolio/majestic-02.jpeg';
+import majestic_03 from '@/assets/img/flower-portfolio/majestic-03.jpeg';
+import majestic_04 from '@/assets/img/flower-portfolio/majestic-04.jpeg';
+import majestic_05 from '@/assets/img/flower-portfolio/majestic-05.jpeg';
+import majestic_06 from '@/assets/img/flower-portfolio/majestic-06.jpeg';
+import majestic_07 from '@/assets/img/flower-portfolio/majestic-07.jpeg';
+import majestic_08 from '@/assets/img/flower-portfolio/majestic-08.jpeg';
 
 
 const gallery_images = [
+  majestic_01,
+  majestic_02,
+  majestic_03,
+  majestic_04,
+  majestic_05,
+  majestic_06,
+  majestic_07,
+  majestic_08,
   flower_01,
   flower_02,
   flower_03,

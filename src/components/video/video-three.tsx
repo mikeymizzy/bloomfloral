@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import feature_img from "@/assets/img/flower-portfolio/flower-34.jpeg";
+import feature_img from "@/assets/img/flower-portfolio/majestic-03.jpeg";
 
 export default function VideoThree() {
   return (

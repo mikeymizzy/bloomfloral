@@ -45,7 +45,7 @@ const {isSticky, headerFullWidth} = useStickyHeader(20);
             <div className="row align-items-center">
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-logo tp-header-3-logo flower-header-logo">
-                  <Link href="/">Bloom Floral</Link>
+                  <Link href="/">Majestic Florist</Link>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6 d-none d-xl-block">
@@ -70,14 +70,14 @@ const {isSticky, headerFullWidth} = useStickyHeader(20);
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <Link href="#contact" aria-label="Email Bloom Floral">
+                    <Link href="mailto:info@majesticflorist.co.za" aria-label="Email Majestic Florist">
                       <i className="fa-solid fa-envelope"></i>
                     </Link>
-                    <Link href="#" aria-label="Bloom Floral on Facebook">
-                      <i className="fa-brands fa-facebook"></i>
+                    <Link href="tel:+27613548164" aria-label="Call Majestic Florist">
+                      <i className="fa-solid fa-phone"></i>
                     </Link>
-                    <Link href="#" aria-label="Bloom Floral on Instagram">
-                      <i className="fa-brands fa-instagram"></i>
+                    <Link href="https://www.majesticflorist.co.za" aria-label="Visit the Majestic Florist website">
+                      <i className="fa-solid fa-globe"></i>
                     </Link>
                   </div>
                   <Link href="#contact" className="flower-mobile-cta d-xl-none">Contact</Link>

@@ -41,14 +41,14 @@ export default function FooterFour() {
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
                   <p className="mb-100">
-                    Floral design for celebrations, <br />
-                    brand moments, and intimate tables.
+                    Floral styling for decor, functions, <br />
+                    weddings and memorable events.
                   </p>
                   <Link className="tp-footer-3-logo p-relative flower-footer-logo" href="/">
-                    Bloom Floral
+                    Majestic Florist
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Bloom Floral <br /> © All rights reserved
+                    {new Date().getFullYear()} Majestic Florist <br /> © All rights reserved
                   </p>
                 </div>
               </div>
@@ -59,20 +59,21 @@ export default function FooterFour() {
                   <h4 className="tp-footer-3-title">Contact</h4>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      <Link href="#contact">Available for weddings, events, and private bookings</Link>
+                      Lawrence · Floral Stylist<br />Johannesburg, South Africa
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <Link href="tel:+27833824166">+27833824166</Link></span>
-                    <span>E: <Link href="mailto:hello@bloomfloral.co.za">hello@bloomfloral.co.za</Link></span>
+                    <span>P: <Link href="tel:+27613548164">+27 61 354 8164</Link></span>
+                    <span>E: <Link href="mailto:info@majesticflorist.co.za">info@majesticflorist.co.za</Link></span>
+                    <span>W: <Link href="https://www.majesticflorist.co.za">majesticflorist.co.za</Link></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">
                   <h4 className="tp-footer-3-title">Follow</h4>
                   <div className="tp-footer-3-social">
-                    <Link href="#"><i className="fa-brands fa-facebook-f"></i></Link>
-                    <Link href="#"><i className="fa-brands fa-instagram"></i></Link>
-                    <Link href="mailto:hello@bloomfloral.co.za"><i className="fa-solid fa-envelope"></i></Link>
+                    <Link href="tel:+27613548164" aria-label="Call Majestic Florist"><i className="fa-solid fa-phone"></i></Link>
+                    <Link href="https://www.majesticflorist.co.za" aria-label="Visit Majestic Florist online"><i className="fa-solid fa-globe"></i></Link>
+                    <Link href="mailto:info@majesticflorist.co.za" aria-label="Email Majestic Florist"><i className="fa-solid fa-envelope"></i></Link>
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HomeFourMain from "@/pages/homes/home-4";
 
 export const metadata: Metadata = {
-  title: "Bloom Floral - Flower Provider Services",
+  title: "Majestic Florist | Decor, Functions and Events",
 };
 
 export default function Home() {
