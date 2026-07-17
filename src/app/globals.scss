@@ -34,6 +34,15 @@ html[data-theme='dark'] body.home-four-black {
   text-transform: uppercase;
 }
 
+.home-four-black .flower-header-logo,
+.home-four-black .flower-footer-logo {
+  text-align: center;
+}
+
+.home-four-black .flower-header-logo a {
+  width: 100%;
+}
+
 .home-four-black .flower-simple-menu ul {
   align-items: center;
   display: flex;
@@ -152,6 +161,32 @@ html[data-theme='dark'] body.home-four-black {
 
 .home-four-black .flower-contact-form button:hover {
   background: #d8ff36;
+}
+
+.home-four-black .flower-contact-form button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.home-four-black .flower-hp-field {
+  height: 0;
+  left: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+}
+
+.home-four-black .flower-form-feedback {
+  color: #ffffff;
+  margin: 22px 0 0;
+}
+
+.home-four-black .flower-form-feedback.success {
+  color: #d8ff36;
+}
+
+.home-four-black .flower-form-feedback.error {
+  color: #ff8c8c;
 }
 
 @media (max-width: 767px) {

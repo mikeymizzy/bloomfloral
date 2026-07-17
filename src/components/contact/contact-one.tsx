@@ -1,8 +1,50 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import cta from '@/assets/img/flower-portfolio/majestic-01.jpeg';
 
 export default function ContactOne() {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [feedback, setFeedback] = useState("");
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus("sending");
+    setFeedback("");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          eventDate: formData.get("event_date"),
+          eventType: formData.get("event_type"),
+          message: formData.get("message"),
+          website: formData.get("website"),
+        }),
+      });
+
+      const result = (await response.json()) as { error?: string };
+      if (!response.ok) {
+        throw new Error(result.error || "Unable to send your enquiry.");
+      }
+
+      form.reset();
+      setStatus("success");
+      setFeedback("Thank you. Your enquiry has been sent to Majestic Florist.");
+    } catch (error) {
+      setStatus("error");
+      setFeedback(error instanceof Error ? error.message : "Unable to send your enquiry.");
+    }
+  };
+
   return (
     <div id="contact" className="tp-cta-area black-bg pt-120 pb-120 z-index fix">
       <div className="container">
@@ -23,16 +65,16 @@ export default function ContactOne() {
         </div>
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
-            <form className="flower-contact-form" action="mailto:info@majesticflorist.co.za" method="post">
+            <form className="flower-contact-form" onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-6">
-                  <input type="text" name="name" placeholder="Your name" aria-label="Your name" />
+                  <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />
                 </div>
                 <div className="col-md-6">
-                  <input type="email" name="email" placeholder="Email address" aria-label="Email address" />
+                  <input type="email" name="email" placeholder="Email address" aria-label="Email address" required />
                 </div>
                 <div className="col-md-6">
-                  <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" />
+                  <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" required />
                 </div>
                 <div className="col-md-6">
                   <input type="text" name="event_date" placeholder="Event date" aria-label="Event date" />
@@ -50,10 +92,21 @@ export default function ContactOne() {
                   </select>
                 </div>
                 <div className="col-12">
-                  <textarea name="message" placeholder="Tell us about the venue, color palette, guest count, and floral style you want" aria-label="Floral enquiry details"></textarea>
+                  <textarea name="message" placeholder="Tell us about the venue, color palette, guest count, and floral style you want" aria-label="Floral enquiry details" required></textarea>
+                </div>
+                <div className="flower-hp-field" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <input id="website" type="text" name="website" tabIndex={-1} autoComplete="off" />
                 </div>
                 <div className="col-12 text-center">
-                  <button type="submit">Send Enquiry</button>
+                  <button type="submit" disabled={status === "sending"}>
+                    {status === "sending" ? "Sending…" : "Send Enquiry"}
+                  </button>
+                  {feedback && (
+                    <p className={`flower-form-feedback ${status}`} role="status" aria-live="polite">
+                      {feedback}
+                    </p>
+                  )}
                 </div>
               </div>
             </form>
