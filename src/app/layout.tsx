@@ -68,9 +68,19 @@ const marcellus = Marcellus({
 });
 
 export const metadata: Metadata = {
-  title: "Majestic Florist | Decor, Functions and Events",
+  title: "Majestic Florist | Bespoke Floral Decor & Event Styling in Johannesburg",
   description:
-    "Majestic Florist creates bespoke floral decor for weddings, functions and events in Johannesburg, South Africa.",
+    "Luxury bespoke floral arrangements for weddings, corporate events, and celebrations in Johannesburg, South Africa. Expert event styling and floral design.",
+  keywords: "florist, floral design, wedding flowers, event decor, Johannesburg, floral arrangements, corporate events",
+  authors: [{ name: "Majestic Florist" }],
+  openGraph: {
+    title: "Majestic Florist | Bespoke Floral Decor & Event Styling",
+    description: "Luxury bespoke floral arrangements for weddings, corporate events, and celebrations in Johannesburg.",
+    type: "website",
+    locale: "en_ZA",
+  },
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
