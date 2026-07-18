@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // decorative image removed per request
 
 export default function ContactOne() {
@@ -43,41 +43,6 @@ export default function ContactOne() {
       setFeedback(error instanceof Error ? error.message : "Unable to send your enquiry.");
     }
   };
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const scrollToForm = () => {
-      try {
-        const formEl = document.getElementById("contact-form");
-        if (formEl) {
-          // wait for layout animations to complete (e.g., gsap animations on viewport enter)
-          setTimeout(() => {
-            const rect = formEl.getBoundingClientRect();
-            const yOffset = -100; // account for fixed header
-            window.scrollBy({
-              top: rect.top + window.scrollY + yOffset,
-              behavior: "smooth",
-            });
-          }, 300); // give animations time to run
-        }
-      } catch (e) {
-        /* ignore */
-      }
-    };
-
-    const handleHash = () => {
-      const hash = window.location.hash;
-      if (hash === "#contact" || hash === "#contact-form") {
-        scrollToForm();
-      }
-    };
-
-    // run once on mount in case we landed with the hash
-    handleHash();
-    window.addEventListener("hashchange", handleHash);
-    return () => window.removeEventListener("hashchange", handleHash);
-  }, []);
 
   return (
     <div id="contact" className="tp-cta-area black-bg pt-120 pb-120 z-index fix">

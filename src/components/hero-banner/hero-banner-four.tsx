@@ -2,8 +2,23 @@
 import React from "react";
 import { ArrowBg, RightArrowTwo } from "../svg";
 import Link from "next/link";
+import { ScrollSmoother } from "@/plugins";
 
 export default function HeroBannerFour() {
+  const handleBookFlowers = () => {
+    const target = document.getElementById("contact-form");
+    if (!target) return;
+
+    const smoother = ScrollSmoother.get();
+    if (smoother) {
+      smoother.scrollTo(target, true, "top 120px");
+      return;
+    }
+
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - 120;
+    window.scrollTo({ top: targetTop, behavior: "smooth" });
+  };
+
   return (
     <div className="tp-hero-3-area tp-hero-3-ptb tp-hero-3-dark fix">
       <div className="container">
@@ -20,13 +35,18 @@ export default function HeroBannerFour() {
               <span className="tp-hero-3-category tp_reveal_anim">
                 weddings / corporate events / tablescapes / installations
               </span>
-              <Link className="tp-btn-black-2" href="#contact-form">
+              <button
+                className="tp-btn-black-2"
+                onClick={handleBookFlowers}
+                type="button"
+                aria-label="Book Flowers"
+              >
                 Book Flowers{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />
                 </span>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
