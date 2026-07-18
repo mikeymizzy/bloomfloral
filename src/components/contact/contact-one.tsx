@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import cta from '@/assets/img/flower-portfolio/majestic-01.jpeg';
+// decorative image removed per request
 
 export default function ContactOne() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -80,9 +79,7 @@ export default function ContactOne() {
               Share your date, venue, color direction, and floral wish list.
               We will shape the arrangements around your occasion.
             </p>
-            <div className="tp-cta-icon">
-              <Image src={cta} alt="floral consultation arrangement" sizes="180px" />
-            </div>
+            {/* contact image removed */}
           </div>
         </div>
         <div className="row justify-content-center">
