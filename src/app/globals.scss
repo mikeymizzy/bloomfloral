@@ -262,3 +262,34 @@ html[data-theme='dark'] body.home-four-black {
   bottom: 0;
   z-index: -1;
 }
+
+/* Contact section tweaks: center title, stop icon/shape animation */
+.home-four-black .tp-cta-title-box {
+  text-align: center;
+}
+
+.home-four-black .tp-cta-title {
+  margin: 0 auto;
+}
+
+.home-four-black .tp-cta-icon {
+  margin: 18px auto 0;
+  display: block;
+  width: 180px;
+  height: 180px;
+  animation: none !important;
+  transform: none !important;
+}
+
+.home-four-black .tp-cta-icon img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* In case a decorative circle or other element is animated, disable it here */
+.home-four-black .tp-hero-3-circle-shape,
+.home-four-black .tp-hero-3-circle-shape span {
+  animation: none !important;
+  transform: none !important;
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import cta from '@/assets/img/flower-portfolio/majestic-01.jpeg';
 
@@ -44,6 +44,28 @@ export default function ContactOne() {
       setFeedback(error instanceof Error ? error.message : "Unable to send your enquiry.");
     }
   };
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const adjust = () => {
+      try {
+        if (window.location.hash === "#contact") {
+          // small delay to let any smooth scroller settle, then nudge the page up
+          setTimeout(() => {
+            window.scrollBy({ top: -120, behavior: "smooth" });
+          }, 60);
+        }
+      } catch (e) {
+        /* ignore */
+      }
+    };
+
+    // run once on mount in case we landed with the hash
+    adjust();
+    window.addEventListener("hashchange", adjust);
+    return () => window.removeEventListener("hashchange", adjust);
+  }, []);
 
   return (
     <div id="contact" className="tp-cta-area black-bg pt-120 pb-120 z-index fix">
