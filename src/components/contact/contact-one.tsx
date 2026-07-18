@@ -47,23 +47,36 @@ export default function ContactOne() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const adjust = () => {
+    const scrollToForm = () => {
       try {
-        if (window.location.hash === "#contact") {
-          // small delay to let any smooth scroller settle, then nudge the page up
+        const formEl = document.getElementById("contact-form");
+        if (formEl) {
+          // wait for layout animations to complete (e.g., gsap animations on viewport enter)
           setTimeout(() => {
-            window.scrollBy({ top: -120, behavior: "smooth" });
-          }, 60);
+            const rect = formEl.getBoundingClientRect();
+            const yOffset = -100; // account for fixed header
+            window.scrollBy({
+              top: rect.top + window.scrollY + yOffset,
+              behavior: "smooth",
+            });
+          }, 300); // give animations time to run
         }
       } catch (e) {
         /* ignore */
       }
     };
 
+    const handleHash = () => {
+      const hash = window.location.hash;
+      if (hash === "#contact" || hash === "#contact-form") {
+        scrollToForm();
+      }
+    };
+
     // run once on mount in case we landed with the hash
-    adjust();
-    window.addEventListener("hashchange", adjust);
-    return () => window.removeEventListener("hashchange", adjust);
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
   }, []);
 
   return (
@@ -84,7 +97,7 @@ export default function ContactOne() {
         </div>
         <div className="row justify-content-center">
           <div className="col-xl-8 col-lg-10">
-            <form className="flower-contact-form" onSubmit={handleSubmit}>
+            <form id="contact-form" className="flower-contact-form" onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-6">
                   <input type="text" name="name" placeholder="Your name" aria-label="Your name" required />

@@ -8,7 +8,7 @@ const nav_links = [
   { href: "/", label: "Home" },
   { href: "#services", label: "Services" },
   { href: "#portfolio", label: "Portfolio" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact-form", label: "Contact" },
 ];
 
 export default function HeaderFour() {
@@ -80,7 +80,7 @@ const {isSticky, headerFullWidth} = useStickyHeader(20);
                       <i className="fa-solid fa-globe"></i>
                     </Link>
                   </div>
-                  <Link href="#contact" className="flower-mobile-cta d-xl-none">Contact</Link>
+                  <Link href="#contact-form" className="flower-mobile-cta d-xl-none">Contact</Link>
                 </div>
               </div>
             </div>

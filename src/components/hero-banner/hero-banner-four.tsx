@@ -20,7 +20,7 @@ export default function HeroBannerFour() {
               <span className="tp-hero-3-category tp_reveal_anim">
                 weddings / corporate events / tablescapes / installations
               </span>
-              <Link className="tp-btn-black-2" href="#contact">
+              <Link className="tp-btn-black-2" href="#contact-form">
                 Book Flowers{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
